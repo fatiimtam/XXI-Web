@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema XXI ‧ Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+
+    <div class="topnav" style="justify-content: space-between">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Cinema_XXI.svg/1196px-Cinema_XXI.svg.png"
+        alt="XXI logo"
+        onclick="window.location.href='index.html'"
+        style="margin-left: 12px; height: 24px"/>
+      <div style="
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          margin-right: 12px;">
+        <a onclick="window.location.href='ticket.html'">Book Seat</a>
+        <a href="#login">Login</a>
+        <a class="active" href="#signup">Sign Up</a>
+      </div>
+    </div>
+
+    <div class="search-box" style="margin-top: 23px; margin-left: 26px;">
+      <input type="text" placeholder="Search movies..." />
+      <button>🔍︎</button>
+    </div>
+
+    <h1 style="
+        color: #232023;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        justify-content: center;
+        display: flex;">
+      Now Playing
+    </h1>
+
+    <div style="flex-direction: row; display: flex; justify-content: center; gap: 30px;">
+    <!-- 1st movie card -->
+    <div onclick="window.location.href='detail1.html'" class="movie-container">
+        <div class="movie-card">
+        <div class="label">Tickets Available</div>
+        <div class="movie-rated">PG-13</div>
+        <img
+            src="https://gowest.id/wp-content/uploads/2023/06/synopsis_poster.jpg"
+            alt="Movie Poster"/>
+        <div class="overlay"></div>
+        <div class="button-group">
+          <p class="movie-duration">Action/Sci-Fi ‧ 2h 20m</p>
+            <button class="trailer-btn">Watch Trailer</button>
+            <button class="ticket-btn" onclick="event.stopPropagation(); window.location.href='ticket.html'" >Buy Ticket</button>
+        </div>
+        </div>
+        <h3 class="movie-title">Spider-Man: Across the Spider-Verse</h3>
+    </div>
+
+    <!-- 2nd movie card -->
+    <div onclick="window.location.href='detail2.html'" class="movie-container">
+        <div class="movie-card">
+        <div class="label">Tickets Available</div>
+        <div class="movie-rated">PG-13</div>
+        <img
+            src="https://lh5.googleusercontent.com/proxy/CotX6SgAZrK8NOgC4aLkrrHcTnge6aVz4cYPTPXv7XAg83zn2vchGAK-rOiKhFHs0oUKqEup3ja98tHxQjEhkHe5T7f6IeK8RleijH_JMeZy2ZYRG5hYPQ"
+            alt="Movie Poster"/>
+        <div class="overlay"></div>
+        <div class="button-group">
+          <p class="movie-duration">Horror/Mystery ‧ 1h 50m</p>
+            <button class="trailer-btn">Watch Trailer</button>
+            <button class="ticket-btn" onclick="event.stopPropagation(); window.location.href='ticket.html'">Buy Ticket</button>
+        </div>
+        </div>
+        <h3 class="movie-title">Five Nights at Freddy’s</h3>
+    </div>
+
+    <!-- 3rd movie card -->
+    <div class="movie-container">
+        <div onclick="window.location.href='detail3.html'" class="movie-card">
+        <div class="label">Tickets Available</div>
+        <div class="movie-rated">R-16</div>
+        <img
+            src="https://upload.wikimedia.org/wikipedia/id/9/95/Chainsaw_Man_Reze_Arc_movie_poster.jpg"
+            alt="Movie Poster"/>
+        <div class="overlay"></div>
+        <div class="button-group">
+          <p class="movie-duration">Animation/Adventure/Horror ‧ 1h 40m</p>
+            <button class="trailer-btn">Watch Trailer</button>
+            <button class="ticket-btn " onclick="event.stopPropagation(); window.location.href='ticket.html'">Buy Ticket</button>
+        </div>
+        </div>
+        <h3 class="movie-title">Chainsaw Man: Reze Arc</h3>
+    </div>
+    </div>
+
+  </body>
+
+</html>
